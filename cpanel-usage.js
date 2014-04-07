@@ -134,7 +134,7 @@ function logout(cookie, options) {
     console.log('fini')
     setTimeout(function() {
       emitter.emit('loggedOut');
-    }, 30000);
+    }, 600000);
   });
   
   req.on('error', function(e) {
