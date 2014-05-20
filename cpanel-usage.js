@@ -110,7 +110,7 @@ function parseReport(html, emitter) {
 }
 
 function writeToFile(data, emitter) {
-  fs.appendFile('/home/rhavill/Desktop/resources.csv', "\n", function(err) {
+  fs.appendFile(config.outputFile, "\n", function(err) {
     if (err) throw err;
     var string = ''
     for (i = 0; i < data.length; i++) {
